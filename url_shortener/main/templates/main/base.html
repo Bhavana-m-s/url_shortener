@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link Shortener</title>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f0f0f0; /* Optional: add a background color */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: purple; /* Set the color to purple */
+      text-align: center;
+      margin-top: 1em; /* Adjust the top margin as needed */
+    }
+    #main-card {
+      margin: 0 auto;
+      display: flex;
+      width: 50em;
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="mdc-typography">
+  <h1>URL SHORTENER</h1>
+  <div id="main-card">
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+</html>
