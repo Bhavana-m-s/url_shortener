@@ -1,2 +1,2 @@
-# url_shortener
+# URL SHORTENER
 ### This is Django project
